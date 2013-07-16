@@ -22,7 +22,6 @@ public class RandomInt {
      * @return {@link int}
      */
     public static int anyRandomIntRange(int low, int high) {
-        Random random = new Random();
-        return random.nextInt(high - low + 1) + low;
+    	return low + (int) (Math.random() * ((high - low) + 1));
     }
 }

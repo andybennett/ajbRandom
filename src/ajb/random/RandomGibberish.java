@@ -18,7 +18,7 @@ public class RandomGibberish {
 
 		for (int i = 0; i < noOfSyllables; i++) {
 
-			result += createRandomSyllable(RandomInt.anyRandomIntRange(1, 3));
+			result += createRandomSyllable(RandomInt.anyRandomIntRange(2, 3));
 
 		}
 
@@ -40,7 +40,7 @@ public class RandomGibberish {
 
 			} else {
 
-				result += constants[RandomInt.anyRandomIntRange(0, vowels.length - 1)];
+				result += constants[RandomInt.anyRandomIntRange(0, constants.length - 1)];
 				vowel = true;
 
 			}
